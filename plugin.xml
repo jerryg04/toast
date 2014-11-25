@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
+        id="com.notificacionbar.cordova.plugins.notificacionbar"
+        version="1.0.1">
+
+    <name>toast</name>
+
+    <description>Mensaje toast centro de pantalla</description>
+    <keywords>toast,android</keywords>
+    <license>LGPV v.3</license>
+
+    <author>Jerryg04 (github.com/jerryg04)</author>
+
+    <engines>
+        <engine name="cordova" version=">=3.0.0" />
+    </engines>
+
+    <!-- ios -->
+    <platform name="android">
+
+        <config-file target="config.xml" parent="/*">
+		<feature name="toast">
+			<param name="android-package" value="com.cordova.plugins.toast"/>
+		</feature>
+        </config-file>
+
+        <js-module src="www/toast.js" name="Notificacion">
+            <clobbers target="plugins.toast" />
+        </js-module>
+
+		<source-file src="src/android/toast.java" target-dir="src/com/cordova/plugins/toast" />
+
+    </platform>
+
+</plugin>
