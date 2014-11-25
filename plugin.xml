@@ -21,7 +21,7 @@
 
         <config-file target="config.xml" parent="/*">
 		<feature name="toast">
-			<param name="android-package" value="com.cordova.plugins.toast"/>
+			<param name="android-package" value="com.cordova.plugins.toast.toast"/>
 		</feature>
         </config-file>
 
