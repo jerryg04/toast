@@ -1,4 +1,4 @@
-package com.cordava.plugins.toast;
+package com.cordova.plugins.toast;
 
 import org.apache.cordova.CallbackContext;
 import org.apache.cordova.CordovaPlugin;
