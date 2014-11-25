@@ -25,7 +25,7 @@
 		</feature>
         </config-file>
 
-        <js-module src="www/toast.js" name="Notificacion">
+        <js-module src="www/toast.js" name="Toast">
             <clobbers target="plugins.toast" />
         </js-module>
 
